@@ -277,6 +277,9 @@ class PATAN(nn.Module):
 		tgt_clip_ws = tgt_clip_ws / (torch.mean(tgt_clip_ws, 1).unsqueeze(1).expand(-1, len(tgt_x_scales)))
 		src_clip_ws = src_clip_ws.detach()
 		tgt_clip_ws = tgt_clip_ws.detach()
+		for i, _ in enumerate(src_scale_preds):
+			src_scale_preds[i] = src_scale_preds[i] * (src_clip_ws[:, i].unsqueeze(1).expand(-1, src_scale_preds[i].shape[-1]))
+			tgt_scale_preds[i] = tgt_scale_preds[i] * (tgt_clip_ws[:, i].unsqueeze(1).expand(-1, tgt_scale_preds[i].shape[-1]))
 
 		src_x = torch.stack(src_x_scales, 1)
 		tgt_x = torch.stack(tgt_x_scales, 1)
