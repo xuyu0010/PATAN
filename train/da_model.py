@@ -320,8 +320,6 @@ class da_model(static_model):
 					logging.info("Training:: Target data not match size with source data, with {} target data + {} source data.".format(tgt_data.shape[0], src_data.shape[0]))
 					continue
 				step_count += 1
-				if (i_batch + 1) % 2 == 0:
-					continue
 				if 'PATAN' in self.net.module.__class__.__name__:
 					outputs_tgt, outputs_src, outputs_tgt_sp, outputs_scale_tgt, _, losses, each_losses, _ = self.forward(src_data, tgt_data, src_label, tgt_label, class_weight, step_count)
 					if (step_count > self.start_clip_weight) and (not torch.equal(dynamic_weight_reference.data.cpu(), outputs_scale_tgt[0].data.cpu())) and first_dynamic_weight:
