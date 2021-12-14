@@ -6,7 +6,7 @@ This repository is the demo code for the ICCV 2021 paper "Partial Video Domain A
 ## Prerequisites
 This repository is built with PyTorch, with the following packages necessary for training and testing:
 ```
-PyTorch (1.4.0 recommended)
+PyTorch (1.2.0 recommended)
 opencv-python (pip)
 easydl (pip)
 ```
