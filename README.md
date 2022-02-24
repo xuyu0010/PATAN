@@ -1,5 +1,5 @@
 # Partial Adversarial Temporal Attentive Network (PATAN)
-This repository is the demo code for the ICCV 2021 paper "Partial Video Domain Adaptation with Partial Adversarial Temporal Attentive Network". This repository is built based on the [MFNet](https://github.com/cypw/PyTorch-MFNet) repository. We thank the authors of MFNet for their excellent work.
+This repository is the demo code for the ICCV 2021 paper (oral) "Partial Video Domain Adaptation with Partial Adversarial Temporal Attentive Network". This repository is built based on the [MFNet](https://github.com/cypw/PyTorch-MFNet) repository. We thank the authors of MFNet for their excellent work.
 
 ![alt text](./figures/figure-2-structure-3.png "Structure of PATAN")
 
