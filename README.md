@@ -29,6 +29,6 @@ python evaluate_da.py
 ```
 
 ### Notes on training and testing
-- The pretrained model where we start our training from can be found from [mmaction](https://github.com/open-mmlab/mmaction/blob/master/MODEL_ZOO.md).
+<!-- - The pretrained model where we start our training from can be found from [mmaction](https://github.com/open-mmlab/mmaction/blob/master/MODEL_ZOO.md). -->
 - Notes on the '/exps' folder can be found in the README file in that folder.
 - We provide a demo weight [here](https://entuedu-my.sharepoint.com/:f:/g/personal/xuyu0014_e_ntu_edu_sg/EvWxUhJtDYJIm4HNVq4kEVwBb_Dk0IVq0dm-qR0jIgQobA?e=eGbG7T), you should locate it in the '/exps' folder.
