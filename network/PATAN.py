@@ -170,7 +170,7 @@ class PATAN(nn.Module):
 
 		# initializer.xavier(net=self)
 		if pretrained:
-			pretrained_model=os.path.join(os.path.dirname(os.path.realpath(__file__)), 'pretrained/tsn2d_kinetics_rgb_r50.pth')
+			pretrained_model=os.path.join(os.path.dirname(os.path.realpath(__file__)), 'pretrained/tsn2d_rgb_r50.pth')
 			logging.info("Network:: graph initialized, loading pretrained model: `{}'".format(pretrained_model))
 			assert os.path.exists(pretrained_model), "cannot locate: `{}'".format(pretrained_model)
 			pretrained = torch.load(pretrained_model)
