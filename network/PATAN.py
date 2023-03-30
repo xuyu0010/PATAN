@@ -197,8 +197,8 @@ class PATAN(nn.Module):
 		assert self.consensus_type == 'trn-m', NotImplementedError()
 
 		for i in range(src_x.shape[2]):
-			src_out = src_x[:, :, 0, :, :]
-			tgt_out = tgt_x[:, :, 0, :, :]
+			src_out = src_x[:, :, i, :, :]
+			tgt_out = tgt_x[:, :, i, :, :]
 			src_out = self.conv1(src_out)
 			tgt_out = self.conv1(tgt_out)
 			src_out = self.bn1(src_out)
